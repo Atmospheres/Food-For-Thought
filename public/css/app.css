@@ -1,0 +1,25 @@
+.test1 {
+  background-color: #525252
+}
+.test2 {
+  background-color: #FFFFFF
+}
+.close-search {
+}
+.col {
+  padding:20px;
+  box-sizing:border-box;
+}
+.card.small {
+  height: auto;
+}
+.card.small .card-content {
+  height: auto;
+}
+.card.small .card-action {
+  position: relative;
+}
+.search-form{
+  padding-left: 15px;
+  padding-right: 15px;
+}

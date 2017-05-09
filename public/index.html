@@ -1,0 +1,104 @@
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf8"/>
+    <base href="/"/>
+    <title>Food For Thought</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav class="top-nav">
+          <div class="nav-wrapper">
+            <ul class="hide-on-med-and-down">
+              <li class="left"><h5 style="margin-left:15px; margin-top:15px;">Food-For-Thought</h5></li>
+              <!-- <li><a href="#" data-activates="slide-out" class="left btn-side-nav"><i class="material-icons">menu</i></a></li> -->
+              <li class="right"><a href="settings.html"><i class="material-icons">settings</i></a></li>
+              <li class="right"><a href="friends.html"><i class="material-icons">person_pin</i></a></li>
+              <li class="right"><a href="shoppinglist.html"><i class="material-icons">shopping_cart</i></a></li>
+              <li class="right"><a href="cards.html"><i class="material-icons">view_module</i></a></li>
+              <li class="right"><a href="list.html"><i class="material-icons">view_list</i></a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul style="width:300px; margin-top:65px;" class="side-nav fixed  grey lighten-3">
+          <li>
+            <row>
+              <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <img src="TestCat.png" alt="" class="circle" style="width:60">
+                  <!-- image must be square to come out circle, will need to add an ability for the user to crop images if I want to let them upload their own. -->
+                  <div class="col s10">
+                    <span class="black-text">
+                      Lightning Cat
+                    </span>
+                  </div>
+                </div>
+                <p style="margin-left:10px"> Some information about user.</p>
+              </div>
+            </row>
+          </li>
+          <li>
+            <div class="search-form">
+              <form>
+                <div class="input-field">
+                  <input id="recipe_name" type="text" class="validte">
+                  <label for="recipe_name">Recipe Name</label>
+                </div>
+                <div class="switch">
+                  <P class="adv-search">Advanced Search</p>
+                  <label>
+                    Off
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    On
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input id="ingredients_included" type="text">
+                  <label for="ingredients_included">Ingredients to Include</label>
+                </div>
+                <div class="input-field">
+                  <input id="ingredients_excluded" type="text">
+                  <label for="ingredients_excluded">Ingredients to Exclude</label>
+                </div>
+                <div class="switch">
+                  <P class="adv-search">Allergy Filter</p>
+                  <label>
+                    Off
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    On
+                  </label>
+                </div>
+                <div class="switch">
+                  <P class="adv-search">Diet Filter</p>
+                  <label>
+                    Off
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    On
+                  </label>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <div class="row">
+      <search-options></search-options>
+      <search-results></search-results>
+    </div>
+  </body>
+  <script src="js/app.js"></script>
+  <script src="js/lib/angular/angular.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <!-- <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script> -->
+  <script src="js/directives.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.js"></script>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "food-for-thought",
+  "version": "1.0.0",
+  "description": "Recipe search engine and Organizer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bradley Jakubowski",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atmospheres/Food-For-Thought.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Atmospheres/Food-For-Thought/issues"
+  },
+  "homepage": "https://github.com/Atmospheres/Food-For-Thought#readme"
+}
